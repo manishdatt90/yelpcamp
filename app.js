@@ -39,8 +39,8 @@ app.use(function(req, res,next){
 
 //routes file
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp_11d",{useNewUrlParser: true});
-//mongoose.connect("mongodb+srv://yelpcamp:arun12345@yelpcamp-dm2bl.mongodb.net/yelpcamp?retryWrites=true&w=majority",{useNewUrlParser: true});
+//mongoose.connect("mongodb://localhost:27017/yelp_camp_11d",{useNewUrlParser: true});
+mongoose.connect("mongodb+srv://yelpcamp:arun12345@yelpcamp-dm2bl.mongodb.net/yelpcamp?retryWrites=true&w=majority",{useNewUrlParser: true});
 
 // seedDb(); // use to seed the DB
 
@@ -77,7 +77,7 @@ app.use(commentRoutes);
 
 
 
-app.listen(process.env.PORT, function(){
+app.listen(process.env.PORT || 3000, function(){
 	console.log("Server started at 3000");
 });
 // //array of campground 
