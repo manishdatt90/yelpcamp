@@ -40,7 +40,6 @@ app.use(function(req, res,next){
 //routes file
 
 //mongoose.connect("mongodb://localhost:27017/yelp_camp_11d",{useNewUrlParser: true});
-mongoose.connect("mongodb+srv://yelpcamp:arun12345@yelpcamp-dm2bl.mongodb.net/yelpcamp?retryWrites=true&w=majority",{useNewUrlParser: true});
 //mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true});
 
 // seedDb(); // use to seed the DB
