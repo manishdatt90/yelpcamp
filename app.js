@@ -37,9 +37,8 @@ app.use(function(req, res,next){
 	next();
 });
 
-//routes file
 
-//mongoose.connect("mongodb://localhost:27017/yelp_camp_11d",{useNewUrlParser: true});
+
 //mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true});
 
 // seedDb(); // use to seed the DB
